@@ -1,15 +1,15 @@
 import { React, useEffect } from 'react';
 
 import { useDispatch } from 'react-redux';
-import { getRockets } from './redux/Rockets/rockets';
+import { getVehicle } from './redux/Vehicles/vehicle';
 import './App.css';
 
 function App() {
-
-  const dispatchRocket = useDispatch();
+  const dispatch = useDispatch();
   useEffect(() => {
-    dispatchRocket(getRockets());
-  }, []);
+    dispatch(getVehicle());
+  },[]);
+
 
   return (
     <div>
