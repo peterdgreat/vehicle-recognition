@@ -1,20 +1,13 @@
-import { React, useEffect } from 'react';
-
-import { useDispatch } from 'react-redux';
-import { getVehicle } from './redux/Vehicles/vehicle';
+import { React } from 'react';
 import './App.css';
-import Cars from './component/Cars';
+import Car from './component/Car';
 
 function App() {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getVehicle());
-  },[]);
 
 
   return (
     <div>
-      <Cars />
+      <Car />
     </div>
   );
 }

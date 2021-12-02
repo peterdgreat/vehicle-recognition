@@ -13,6 +13,6 @@ export default function Result(props) {
 Result.propTypes = {
     make: PropTypes.string.isRequired,
     model: PropTypes.string.isRequired,
-    year: PropTypes.number.isRequired,
+    year: PropTypes.string.isRequired,
     color: PropTypes.string.isRequired
 }

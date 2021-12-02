@@ -28,6 +28,7 @@ const setVehicles = (payload) => ({
 
 export const getVehicle = () => async (dispatch) => {
 
+dispatch(setVehicles(initialState));
   
 
 };
