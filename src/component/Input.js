@@ -2,7 +2,7 @@ import React , {useState} from 'react'
 import ImageUploading from 'react-images-uploading';
 
 
-export default function Input() {
+export default function Input(props) {
  const [images, setImages] = useState([]);
   const maxNumber = 1;
 
@@ -29,14 +29,14 @@ export default function Input() {
           isDragging,
           dragProps,
         }) => (
-          // write your building UI
+      
           <div className="upload__image-wrapper">
             <button
               style={isDragging ? { color: 'red' } : undefined}
               onClick={onImageUpload}
               {...dragProps}
             >
-              Click or Drop here
+            Drag or Upload a Car Image
             </button>
             {imageList.map((image, index) => (
               <div key={index} className="image-item">
