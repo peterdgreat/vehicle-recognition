@@ -3,6 +3,7 @@ import { React, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getVehicle } from './redux/Vehicles/vehicle';
 import './App.css';
+import Cars from './component/Cars';
 
 function App() {
   const dispatch = useDispatch();
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <div>
-      Hello
+      <Cars />
     </div>
   );
 }
