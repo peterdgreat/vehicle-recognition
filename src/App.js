@@ -1,5 +1,4 @@
 import { React } from 'react';
-import { useSelector } from 'react-redux';
 import './App.css';
 import Car from './component/Car';
 import Result from './component/Result';
@@ -7,7 +6,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
 function App() {
- const dataResult =useSelector((state) => state.vehicleReducer.vehicles);
 
   return (
     <Router>
