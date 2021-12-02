@@ -2,15 +2,11 @@ import React , {useState} from 'react'
 import ImageUploading from 'react-images-uploading';
 import { useDispatch, useSelector } from 'react-redux';
 import   { getVehicle } from '../redux/Vehicles/vehicle';
-import Result from './Result';
+import { NavLink } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 export default function Car(props) {
     const dispatch = useDispatch();
-
-    const dataResult =useSelector((state) => state.vehicleReducer.vehicles);
-    
-
-
  const [images, setImages] = useState([]);
   const maxNumber = 1;
 
@@ -19,16 +15,19 @@ export default function Car(props) {
     console.log(imageList, addUpdateIndex);
     setImages(imageList);
   };
-  const list= [];
+const navigate = useNavigate();
 
   const onUpload = () => {
       if (images.length ===1) {
+          navigate('/details');
         dispatch(getVehicle());
+     
       }
   };
 
   return (
     <div className="App">
+
       <ImageUploading
         multiple= "false"
         value={images}
@@ -57,17 +56,15 @@ export default function Car(props) {
                 <img src={image['data_url']} alt="" width="100" />
                 <div className="image-item__btn-wrapper">
                   <button onClick={() => onImageUpdate(index)}>Update</button>
-                  <button  onClick= {onUpload}>Upload</button>
+                    <button  onClick= {onUpload}>Upload</button>
                 </div>
               </div>
             ))}
           </div>
         )}
       </ImageUploading>
-{/*     
-     {
-       images.length === 1 &&  <Result make={dataResult[0].car.make} model={dataResult[0].car.model} year={dataResult[0].car.years} color={dataResult[0].color.name}/>
-     } */}
+ 
+
       </div>
   
   );

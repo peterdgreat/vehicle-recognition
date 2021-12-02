@@ -1,7 +1,4 @@
-import axios from 'axios';
-
 const VEHICLE_SUCCESS = 'vehicle-recognition/vehicle/VEHICLE_SUCCESS';
-// const imgurl='https://images.app.goo.gl/tspB8e1xZTn45moo7';
 
 
 const initialState = {

@@ -1,18 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
-export default function Result(props) {
-    const {make,model, year, color} =props;
+export default function Result() {
+      const dataResult =useSelector((state) => state.vehicleReducer.vehicles);
+      console.log(dataResult.vehicles[0]);
     return (
-        <div>
-            {make} {model} {year} {color}
+       <div>
+       
+            <div>
+            {dataResult.vehicles[0].car.make} {dataResult.vehicles[0].car.model} {dataResult.vehicles[0].car.years} {dataResult.vehicles[0].color.name}
         </div>
+       </div>
     )
 }
 
-Result.propTypes = {
-    make: PropTypes.string.isRequired,
-    model: PropTypes.string.isRequired,
-    year: PropTypes.string.isRequired,
-    color: PropTypes.string.isRequired
-}
+
