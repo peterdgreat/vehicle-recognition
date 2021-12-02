@@ -1,0 +1,25 @@
+.card {
+    background-color: transparent;
+}
+
+.img-uploaded {
+    width: 70%;
+    object-fit: contain;
+    height: 70%;
+    border: 1px solid #fff;
+    margin: 0 5px 0 5px;
+
+}
+
+.btn {
+    color: #fff;
+}
+
+.btn:hover {
+    color: rgba(255, 255, 255, 0.712);
+    transition: color 1s ease-in-out;
+}
+
+/* .card-body {
+    padding: 0px;
+} */
