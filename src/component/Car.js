@@ -42,9 +42,9 @@ const navigate = useNavigate();
           dragProps,
         }) => (
       
-          <div className="card-wrapper">
-          <div  className="">
-              <button className={`btn ${display}`}
+          <div className="">
+          <div  className="card">
+              <button className={`btn border ${display}`}
               style={isDragging ? { color: 'red' } : undefined}
               onClick={onImageUpload}
               {...dragProps}
