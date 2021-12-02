@@ -1,8 +1,7 @@
 import React , {useState} from 'react'
 import ImageUploading from 'react-images-uploading';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import   { getVehicle } from '../redux/Vehicles/vehicle';
-import { NavLink } from 'react-router-dom';
 import {useNavigate} from 'react-router-dom';
 
 export default function Car(props) {
@@ -10,9 +9,7 @@ export default function Car(props) {
  const [images, setImages] = useState([]);
   const maxNumber = 1;
 
-  const onChange = (imageList, addUpdateIndex) => {
-    // data for submit
-    console.log(imageList, addUpdateIndex);
+  const onChange = (imageList, ) => {
     setImages(imageList);
   };
 const navigate = useNavigate();
@@ -43,14 +40,16 @@ const navigate = useNavigate();
           dragProps,
         }) => (
       
-          <div className="upload__image-wrapper">
-            <button
+          <div className="card">
+          <div  className="card-body">
+              <button
               style={isDragging ? { color: 'red' } : undefined}
               onClick={onImageUpload}
               {...dragProps}
             >
             Drag or Upload a Car Image
             </button>
+          </div>
             {imageList.map((image, index) => (
               <div key={index} className="image-item">
                 <img src={image['data_url']} alt="" width="100" />
