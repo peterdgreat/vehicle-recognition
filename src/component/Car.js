@@ -56,8 +56,8 @@ const navigate = useNavigate();
               <div key={index} className="image-item card d-flex justify-content-center align-items-center">
                 <img src={image['data_url']} alt="" className="img-uploaded" />
                 <div className="d-flex justify-content-center mt-3">
-                  <button className="btn border me-2" onClick={() => onImageUpdate(index)}>Update</button>
-                    <button className="btn border ms-2"  onClick= {onUpload}>Upload</button>
+                  <button className="btn sp-btn border me-2" onClick={() => onImageUpdate(index)}>Update</button>
+                    <button className="btn sp-btn border ms-2"  onClick= {onUpload}>Upload</button>
                 </div>
               </div>
             ))}
