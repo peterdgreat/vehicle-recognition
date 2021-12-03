@@ -12,16 +12,17 @@
 }
 
 .btn {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.767);
     background-color: transparent;
 }
 
 .btn:hover {
+    color: #fff;
     transition: all 1s ease-in-out;
 }
 
 .sp-btn:hover {
-    color: #1C1C1E;
+    color: #1c1c1eec;
     background-color: #fff;
     transition: all 1s ease-in-out;
 }
