@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Result To Match Snapshot renders correctly 1`] = `
+<div>
+  <a
+    aria-current="page"
+    className="active"
+    href="/"
+    onClick={[Function]}
+  >
+    <button
+      className="btn"
+    >
+      Back
+    </button>
+  </a>
+  <div
+    className="result card border"
+  >
+    <h1
+      className="h-100 d-flex justify-content-center align-items-center"
+    >
+      No Car Uploaded
+    </h1>
+  </div>
+</div>
+`;
