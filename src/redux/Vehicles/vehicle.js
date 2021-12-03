@@ -15,21 +15,21 @@ const initialState = {
     "angle": {"name": "Front", "probability": 1},
     "bbox": {"br_x": 0.8987, "br_y": 0.87, "tl_x": 0.1164, "tl_y": 0.1555},
 }
-  ],
+  ]
 };
-const setVehicles = (payload) => ({
+const setVehicles = () => ({
   type: VEHICLE_SUCCESS,
-  payload,
+  payload: initialState.vehicles,
 });
 
 
 export const getVehicle = () => async (dispatch) => {
 
-dispatch(setVehicles(initialState));
+dispatch(setVehicles());
   
 
 };
-const vehicleReducer = (state = initialState, action) => {
+const vehicleReducer = (state = [], action) => {
   switch (action.type) {
     case VEHICLE_SUCCESS:
       return {

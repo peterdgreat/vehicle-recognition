@@ -1,0 +1,28 @@
+.card {
+    background-color: transparent;
+}
+
+.img-uploaded {
+    width: 70%;
+    object-fit: contain;
+    height: 70%;
+    border: 1px solid #fff;
+    margin: 0 5px 0 5px;
+
+}
+
+.btn {
+    color: rgba(255, 255, 255, 0.767);
+    background-color: transparent;
+}
+
+.btn:hover {
+    color: #fff;
+    transition: all 1s ease-in-out;
+}
+
+.sp-btn:hover {
+    color: #1c1c1eec;
+    background-color: #fff;
+    transition: all 1s ease-in-out;
+}

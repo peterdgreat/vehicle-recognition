@@ -1,20 +1,19 @@
 import React , {useState} from 'react'
 import ImageUploading from 'react-images-uploading';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import   { getVehicle } from '../redux/Vehicles/vehicle';
-import { NavLink } from 'react-router-dom';
 import {useNavigate} from 'react-router-dom';
+import '../styles/Car.css'
 
 export default function Car(props) {
     const dispatch = useDispatch();
  const [images, setImages] = useState([]);
   const maxNumber = 1;
 
-  const onChange = (imageList, addUpdateIndex) => {
-    // data for submit
-    console.log(imageList, addUpdateIndex);
+  const onChange = (imageList, ) => {
     setImages(imageList);
   };
+  const display = images.length === 1 ? 'd-none' : ''
 const navigate = useNavigate();
 
   const onUpload = () => {
@@ -43,20 +42,22 @@ const navigate = useNavigate();
           dragProps,
         }) => (
       
-          <div className="upload__image-wrapper">
-            <button
+          <div className="">
+          <div  className="card">
+              <button className={`btn border ${display}`}
               style={isDragging ? { color: 'red' } : undefined}
               onClick={onImageUpload}
               {...dragProps}
             >
-            Drag or Upload a Car Image
+            <h1>Drag or Upload a Car Image</h1>
             </button>
+          </div>
             {imageList.map((image, index) => (
-              <div key={index} className="image-item">
-                <img src={image['data_url']} alt="" width="100" />
-                <div className="image-item__btn-wrapper">
-                  <button onClick={() => onImageUpdate(index)}>Update</button>
-                    <button  onClick= {onUpload}>Upload</button>
+              <div key={index} className="image-item card d-flex justify-content-center align-items-center">
+                <img src={image['data_url']} alt="" className="img-uploaded" />
+                <div className="d-flex justify-content-center mt-3">
+                  <button className="btn sp-btn border me-2" onClick={() => onImageUpdate(index)}>Update</button>
+                    <button className="btn sp-btn border ms-2"  onClick= {onUpload}>Upload</button>
                 </div>
               </div>
             ))}
