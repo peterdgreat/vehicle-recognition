@@ -15,7 +15,7 @@ export default function Result() {
               }
                   <NavLink to='/'>
         <button className="btn">Back</button>
-              </NavLink>
+                  </NavLink>
          <div className="result card border">
      
 
