@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Car renders correctly 1`] = `
+<div
+  className="App"
+>
+  <input
+    accept="image/*"
+    multiple={true}
+    onChange={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="file"
+  />
+  <div
+    className=""
+  >
+    <div
+      className="card"
+    >
+      <button
+        className="btn border "
+        onClick={[Function]}
+        onDragEnter={[Function]}
+        onDragLeave={[Function]}
+        onDragOver={[Function]}
+        onDragStart={[Function]}
+        onDrop={[Function]}
+      >
+        <h1>
+          Drag or Upload a Car Image
+        </h1>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Crypto renders correctly 1`] = `
+<div
+  className="App"
+>
+  <input
+    accept="image/*"
+    multiple={true}
+    onChange={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="file"
+  />
+  <div
+    className=""
+  >
+    <div
+      className="card"
+    >
+      <button
+        className="btn border "
+        onClick={[Function]}
+        onDragEnter={[Function]}
+        onDragLeave={[Function]}
+        onDragOver={[Function]}
+        onDragStart={[Function]}
+        onDrop={[Function]}
+      >
+        <h1>
+          Drag or Upload a Car Image
+        </h1>
+      </button>
+    </div>
+  </div>
+</div>
+`;
