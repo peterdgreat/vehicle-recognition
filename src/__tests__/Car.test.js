@@ -21,3 +21,19 @@ describe('Test Car To Match Snapshot', () => {
   });
 });
 
+describe('Car', () => {
+  test('Expect Test To be Truthy ', () => {
+    render(
+      <Provider store={store}>
+       <Router>
+        <Routes>
+           <Route path="/" element={<Car />} />
+        </Routes>
+         </Router>
+      </Provider>,
+    );
+    const header = screen.findByText('Drag or Upload a Car Image');
+    expect(header).toBeTruthy();
+  });
+});
+
