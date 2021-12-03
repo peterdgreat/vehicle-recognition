@@ -19,6 +19,8 @@ This is a Vehicle image detection Web App, that takes an image and detects if it
 
 - Boostrap
 
+- Redux
+
 - Visual Studio Code
 
 - Git & Github
