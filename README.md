@@ -9,7 +9,7 @@ This is a Vehicle image detection Web App, that takes an image and detects if it
 
 
 ## Demo Video
-[Loom Video]
+[Loom Video](https://www.loom.com/share/1d615d68af5441f9bfa816bfc4269167)
 
 ## Built With
 
