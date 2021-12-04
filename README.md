@@ -51,7 +51,7 @@ yarn start
 
 - GitHub: [@peterdgreat](https://github.com/peterdgreat)
 - Twitter: [@dev_Peter_0](https://twitter.com/dev_Peter_O)
-- LinkedIn: [ajayi-peter](https://linkedin.com/in/ajayipeter)
+- LinkedIn: [ajayipeter](https://linkedin.com/in/ajayipeter)
 
 ## Show your support
 
